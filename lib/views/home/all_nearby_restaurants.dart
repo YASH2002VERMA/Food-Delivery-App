@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/common/app_style.dart';
 import 'package:e_commerce_app/common/background_container.dart';
 import 'package:e_commerce_app/common/reusable_text.dart';
 import 'package:e_commerce_app/constants/constants.dart';
@@ -12,13 +13,14 @@ class AllNearbyrestaurants extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kSecondary,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: kWhite,
-        title: const ReusableText(
-            text: "Nearby Restaurants",
-            style: TextStyle(
-                fontSize: 13, color: kGray, fontWeight: FontWeight.w600)),
+        backgroundColor: kSecondary,
+        title: ReusableText(
+          text: "NearBy Restaurants",
+          style: appStyle(13, kLightWhite, FontWeight.w600),
+        ),
       ),
       body: BackGroundContainer(
         color: Colors.white,

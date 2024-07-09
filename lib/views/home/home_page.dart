@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/common/custom_appbar.dart';
 import 'package:e_commerce_app/common/custom_container.dart';
 import 'package:e_commerce_app/common/heading.dart';
 import 'package:e_commerce_app/constants/constants.dart';
@@ -11,6 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -20,7 +22,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: kPrimary,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(130.h),
-        child: Container(height: 130),
+        child: const CustomAppBar(),
       ),
       body: SafeArea(
         child: CustomContainer(

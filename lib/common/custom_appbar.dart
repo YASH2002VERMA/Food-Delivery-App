@@ -24,7 +24,6 @@ class CustomAppBar extends StatelessWidget {
                 CircleAvatar(
                   radius: 22.r,
                   backgroundColor: kSecondary,
-                  backgroundImage: const NetworkImage('url'),
                 ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 6.h, left: 8.w),
